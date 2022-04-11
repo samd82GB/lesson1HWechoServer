@@ -64,7 +64,7 @@ public class Server {
             if (arrayBytes[i] =='\n') {
                 byteBuffer.flip();            //переводим буфер в режим записи
                 client.write(byteBuffer);
-                byteBuffer.clear();
+
             }
 
         }
