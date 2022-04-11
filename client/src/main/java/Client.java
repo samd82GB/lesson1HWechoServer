@@ -18,7 +18,6 @@ public class Client {
 
         public void start() {
 
-                //new Thread(() -> {
                     System.out.println("New client started on thread " + Thread.currentThread().getName());
                     try {
                         SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 9000));
@@ -29,6 +28,8 @@ public class Client {
                                     Thread.currentThread().getName()
                             ).getBytes()));
                             Thread.sleep(3000);
+
+
                             channel.read(byteBuffer);
                             String message = new String(byteBuffer.array());
                             System.out.println(message);
@@ -40,9 +41,9 @@ public class Client {
                     } catch (IOException | InterruptedException e) {
                         e.printStackTrace();
                     }
-                }//);
+                }
             }
-      // }
+
 
 
 
