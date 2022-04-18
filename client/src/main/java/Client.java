@@ -6,7 +6,7 @@ import java.nio.channels.SocketChannel;
 import java.time.LocalDateTime;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+//класс клиента
 public class Client {
        public static ByteBuffer byteBuffer = ByteBuffer.allocate(256);
 

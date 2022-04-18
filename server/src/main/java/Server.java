@@ -7,7 +7,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
-
+//класс сервера
 public class Server {
 
     public static void main(String[] args) throws IOException {
